@@ -1,0 +1,44 @@
+#Get{border-radius: 18px;}
+#Web{color:red; margin-right: 850px;}
+#Home{color:red;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  gap: 10px;
+  background-color:gray;
+  padding: 100px;
+}
+.img{
+    margin-left: 20px;
+   
+}
+
+.phara{
+    text-align: center;
+    margin-top: 25px;
+    
+}
+.para2{
+    text-align: justify;
+    width: 30rem;
+}
+.list{
+    text-align:left;
+}
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color:white;
+    padding: 10px;
+  }
+  .grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #vishnu{
+    margin-left:1300px;
+  }

@@ -1,0 +1,151 @@
+/*universel zero setting*/
+body{
+  margin: 0;
+  padding: 0;
+}
+.grid1{
+    background-color: grey;
+}
+
+#navbarNavDropdown{
+  margin-left: 1300px;
+}
+/* #butt{
+  border-radius: 60px;
+  border-width: 5px;
+  border-color: white;
+} */
+button{
+  height: 60px;
+  width: 100px;
+  background-color: red;
+  color: black;
+  border: 7px solid white;
+  border-radius: 20px;
+  
+  
+}
+
+#head{
+    font-size:50px;
+    
+}
+#para{
+    font-size:40px;
+}
+#car{
+    height: 500px;
+    width: 700px;
+}
+#button{
+    height: 60px;
+    width: 120px;
+    margin-left: 30%;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 5px;
+}
+#grid2{
+    background-color:white;
+}
+
+#engine{
+    height: 400px;
+    width:400px ;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+#head2{
+    font-size: 40px;
+    margin-left: -400px;
+}
+#para2{
+
+    margin-left: -400px ;
+}
+#grid3{
+    margin-left: 30px;
+    margin-top:-200px;
+}
+/*section2 finish*/
+.portpolio{
+    padding-top: 30px;
+    margin-left: 820px;
+}
+.gallery{
+    background-color: gray;
+}
+#cnav{
+    background-color: gray;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: gray;
+    padding:30px;
+  }
+  .grid-item {
+    background-color:gray;
+    padding: 10px;
+    font-size: 60px;
+    text-align:center;
+  }
+  #car{
+    border-radius: 20px;
+  }
+.po{
+    background-color: white;
+}
+
+.p{
+    margin-left: -360px;
+    background-color: white;
+  }
+
+.grid-containe {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    background-color: black;
+    padding: 50px;
+    margin-right: -370px;
+  }
+  
+  .grid-containe > div {
+    background-color:black;
+    text-align: center;
+    font-size: 30px;
+    
+  }
+  #radio{
+    font-size: 50px;
+    padding-left: 550px;
+    color: red;
+  }
+
+  /*-----------------------------------*/
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color:lightgrey;
+    padding: -10px;
+    margin-right:-370px;
+  }
+  .grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #vishnu{
+    margin-left:1300px;
+  }
+  
+  .footer{
+    margin-right:-370px;
+  }
+  
+
+  
+  
