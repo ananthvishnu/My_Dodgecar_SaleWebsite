@@ -2,6 +2,8 @@
 body{
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 .grid1{
     background-color: grey;
@@ -15,17 +17,127 @@ body{
   border-width: 5px;
   border-color: white;
 } */
+/*button glowing effect*/
 button{
   height: 60px;
-  width: 100px;
+  width: 115px;
+  border: 5px solid black;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 17px;
+  transition: all .5s ease;
+}
+button:hover {
+  letter-spacing: 3px;
   background-color: red;
-  color: black;
-  border: 7px solid white;
-  border-radius: 20px;
-  
-  
+  color: white;
+  box-shadow: red 0px 7px
+  29px 0px;
+  font-size: 19px;
 }
 
+/*888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.gallery{
+  padding: 2em;
+  min-height: 100vh;
+  min-width: 100vw; 
+}
+.buttons{
+  padding: 2em 0 6em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.buttons button{
+  margin: 1em;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  border: none;
+  background: #111;
+  color: #fff;
+  border: 2px solid #111;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: 0.3s;
+
+} 
+
+.buttons button:hover,
+.buttons .btn-clicked{
+  background: #fff;
+  color: #111;
+
+}
+.images{
+  
+  max-width: 1360px;
+  margin: 0em auto; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
+}
+.images img {
+  width: 25em;
+  margin: 1em;
+  border-radius: 0.2em;
+  transition: 0.6s;
+}
+/*Classes for Javascript*/
+.images .img-expand{
+  width: 25em;
+  margin: 1em;
+}
+
+.images .img-shrink{
+  width: 0em;
+  margin: -1em;
+}
+
+@media screen and
+(max-width: 1439px) {
+  .images{
+      max-width: 896px;
+  }
+}
+
+@media screen and 
+(max-width:986px){
+  .images{
+      align-items: center;
+      flex-direction: column;
+
+  }
+  .images img {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+  }
+}
+
+@media screen and 
+(max-width: 600px) {
+  .buttons button {
+      width: 100%;
+      display: block;
+  }
+  .images
+  .img-expand,
+  .images img {
+      width: 100%;
+  }
+}
+
+
+
+/*888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 #head{
     font-size:50px;
     
@@ -38,11 +150,12 @@ button{
     width: 700px;
 }
 #button{
-    height: 60px;
+    height: 70px;
     width: 120px;
     margin-left: 30%;
-    border-radius: 20px;
+    border-radius: 40px;
     border-color: black;
+    color: white;
     border-width: 5px;
 }
 #grid2{
@@ -76,7 +189,7 @@ button{
 .gallery{
     background-color: gray;
 }
-#cnav{
+/* #cnav{
     background-color: gray;
 }
 .grid-container {
@@ -90,7 +203,9 @@ button{
     padding: 10px;
     font-size: 60px;
     text-align:center;
-  }
+  } */
+/*====================================================*/
+
   #car{
     border-radius: 20px;
   }

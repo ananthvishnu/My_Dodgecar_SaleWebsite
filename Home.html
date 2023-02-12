@@ -43,7 +43,7 @@
               </li>
             </ul>
             <!-- <button type="button" onclick="red()" class="btn btn-danger" id="butt">START</button> -->
-            <button type="button" class="button" id="primary">Get Started</button>
+            <button type="button" class="button" id="primary">Started</button>
           </div>
         </div>
       </nav>
@@ -56,10 +56,11 @@
         <img src="./images/gif2.gif"><img src="./images/gif3.gif">
         <h1 id="head">DODGE CHALLENGER HELLCAT</h1>
         <p id="para" >It is powered by a supercharged 6.2-liter V8 Engine that produce 717 horsepower and 650 lb-ft of torque.</p>
-        <button type="button" class="btn btn-danger" id="button">get info</button>
+        <button type="button" class="btn btn-danger" id="button">more info</button>
       </div>
+      <!--caurosel bar-->
       <div class="col">
-        <img src="./f1.webp" alt="car" id="car">
+        <img  name="slide" alt="car" id="car">
       </div>
     </div>
 </section>
@@ -67,7 +68,7 @@
 <section>
   <div class="container" id="grid2">
     <div class="row">
-      <div class="col-sm-8" ><img src="./images/super.gif" id="engine"></div>
+      <div class="col-sm-8" ><img src="./images/super.gif" id="engine" onmouseover="zoomin()" onmouseout="zoomout()"></div>
       <div class="col-sm-4"><h2 id="head2">The High Perfomance Supercharged V8 Engine</h2>
       <p id="para2">V8 Engines are known for their smooth,high-revving power,and they are often used in high-perfomance.The Dodge Challenger Hellcat is a high-performance version of the Dodge Challenger muscle car. It is powered by a supercharged 6.2-liter V8 engine that produces 717 horsepower and 650 lb-ft of torque. The car features a unique design with a distinctive front fascia and hood, as well as a high-performance suspension and braking system. Other features include a sport-tuned exhaust,</p></div>
     </div>
@@ -85,8 +86,8 @@
 <p style="font-size: 40px; font-weight: 1000;">Check Out Our Cars</p>
 <button type="button" class="btn btn-danger" style="height: 10px; margin-left: 150px;">.................</button>
 </div>
-
-<div>
+<!--image gallery bootstrape-->
+<!-- <div>
 <nav class="navbar navbar-expand-lg navbar-light" id="cnav">
   <div class="container-fluid" style="margin-left: 850px;">
    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,7 +123,66 @@
   <div class="grid-item"><img src="./images/8.jpg" alt="car" style="height: 330px; width: 600px;" id="car"></div>
   <div class="grid-item"><img src="./images/5.jpg" alt="car" style="height: 330px; width: 600px;" id="car"></div>
   <div class="grid-item"><img src="./images/new5.jpg" alt="car" style="height: 330px; width: 600px;" id="car"></div>  
-</div>
+</div> -->
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+<section class="gallery">
+  <div class="buttons">
+     <button type="button">
+         All
+     </button>
+ 
+     <button type="button" data-btn="1">
+         DEMON
+     </button>
+ 
+     <button type="button" data-btn="2">
+         CAT
+     </button>
+ 
+     <button type="button" data-btn="3">
+         VIPER
+     </button>
+ 
+     <button type="button" data-btn="4">
+         SRT
+     </button>
+ </div>
+     <div class="images">
+         
+      <a href="Product.html"><img src="./images/1.jpg" alt="car" data-img="1"></a>
+         <img src="./images/2.jpg" alt="car" data-img="1">
+         <img src="./images/3.jpg" alt="car" data-img="1">
+ 
+         
+          
+         <img src="./images/4.jpg" alt="" data-img="2">
+         <img src="./images/5.jpg" alt="" data-img="2">
+         <img src="./images/6.jpg" alt="" data-img="2">
+         
+ 
+ 
+ 
+         <img src="./images/8.jpg" alt="" data-img="3">
+         <img src="./images/9.jpg" alt="" data-img="3">
+         <img src="./images/10.jpeg" alt="" data-img="3">
+         
+ 
+         <img src="./images/11.webp" alt="" data-img="4">
+         <img src="./images/12.webp" alt="" data-img="4">
+         <img src="./images/14.jpg" alt="" data-img="4">
+ 
+         <!-- <img src="./.jpg" alt="" data-img="5">
+         <img src="./.jpg" alt="" data-img="6">
+         <img src="./.jpg" alt="" data-img="7">
+         <img src="./.jpg" alt="" data-img="8">
+         <img src="./.jpg" alt="" data-img="8">
+         <img src="./.jpg" alt="" data-img="9">
+          -->
+ 
+ 
+     </div>
+ </section>
 <!--gallery finish-->
 <div class="po">
   <div class="portpolio">
