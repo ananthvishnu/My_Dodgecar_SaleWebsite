@@ -96,4 +96,21 @@ function zoomin(){
 function zoomout(){
     document.querySelector('#engine').style.transform ="scale(1)"
  
+};
+
+//under page slide show function//
+var imgArray = [
+    '1.gif',
+    '2.gif',
+    '3.webp'
+];
+var curIndex = 0;
+var imgDuration = 6000;
+
+function slideShow() {
+    document.getElementById('image1').src = imgArray[curIndex];
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout("slideShow()", imgDuration);
 }
+slideShow();

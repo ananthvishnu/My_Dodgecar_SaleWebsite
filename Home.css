@@ -1,22 +1,30 @@
+/*google fonts*/  
+  @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bungee+Inline&family=Bungee+Shade&family=Lobster&family=Oleo+Script+Swash+Caps&family=Oswald:wght@700&family=Pirata+One&family=Poppins:wght@700&display=swap');
+
+
 /*universel zero setting*/
 body{
   margin: 0;
   padding: 0;
   max-width: 100vw;
   max-height: 100vh;
+  background-image: url(./11111.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  
+  
+  
 }
 .grid1{
-    background-color: grey;
+    background-color: gray;
+    font-family:Bowlby One SC;
 }
 
 #navbarNavDropdown{
   margin-left: 1300px;
 }
-/* #butt{
-  border-radius: 60px;
-  border-width: 5px;
-  border-color: white;
-} */
+
 /*button glowing effect*/
 button{
   height: 60px;
@@ -43,8 +51,10 @@ button:hover {
 
 .gallery{
   padding: 2em;
-  min-height: 100vh;
-  min-width: 100vw; 
+  width: 100vw;
+  height: 1500px;
+  border: 10px solid;
+
 }
 .buttons{
   padding: 2em 0 6em 0;
@@ -137,10 +147,10 @@ button:hover {
 
 
 
-/*888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+/*888888888888888888888888 HOME PAGE UP SIDE CSS 888888888888888888888888888888888888888888888888*/
+
 #head{
-    font-size:50px;
-    
+    font-size:60px; 
 }
 #para{
     font-size:40px;
@@ -148,6 +158,8 @@ button:hover {
 #car{
     height: 500px;
     width: 700px;
+    border-radius: 20px;
+
 }
 #button{
     height: 70px;
@@ -159,7 +171,12 @@ button:hover {
     border-width: 5px;
 }
 #grid2{
-    background-color:white;
+    background-color:grey;
+    margin-top: 200px;
+    height: 460px;
+    border: 10px solid;
+    border-radius: 20px;
+  
 }
 
 #engine{
@@ -189,28 +206,13 @@ button:hover {
 .gallery{
     background-color: gray;
 }
-/* #cnav{
-    background-color: gray;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: gray;
-    padding:30px;
-  }
-  .grid-item {
-    background-color:gray;
-    padding: 10px;
-    font-size: 60px;
-    text-align:center;
-  } */
+
 /*====================================================*/
 
-  #car{
-    border-radius: 20px;
-  }
+  
 .po{
-    background-color: white;
+    background-color:white;
+
 }
 
 .p{
@@ -220,19 +222,15 @@ button:hover {
 
 .grid-containe {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
     background-color: black;
     padding: 50px;
-    margin-right: -370px;
+    margin-right: -360px;
   }
   
   .grid-containe > div {
-    background-color:black;
-    text-align: center;
-    font-size: 30px;
-    
+    background-color:black;    
   }
+
   #radio{
     font-size: 50px;
     padding-left: 550px;
@@ -261,6 +259,12 @@ button:hover {
     margin-right:-370px;
   }
   
-
-  
+/**********************************************************/
+#image1{
+  height: 600px;
+  width: 1900px;
+}
+  .grid1{
+    border: 10px solid;
+  }
   

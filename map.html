@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
-    <style>
+<style>
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -17,47 +17,280 @@
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
+  background-color: white;
   padding:150px;
   height: 900px;
   width: 900px;
 }
+/* .card{height:20px;
+width: 470px;} */
+/***************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --grey: #F4f2FF;
+    --dark-grey:black;
+
+    --green:#23AEOO;
+    --light-green:#FFD2D2;
+
+    --red:#FE2727; 
+    --light-red: #FFD2D2;
+     
+    --blue: #277FFE;
+    --light-blue: #B6C6FF;
+    --dark-blue: #1368E3;
+
+    --bs: #AECFFF;
+    --text:#9B9B9B; 
+}
+
+/* body{
+    background: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 16px;
+} */
+
+ .container{
+    /* max-width: 500px;
+    width: 100%;
+    position: relative;
+    ; */
+    margin-top: 180px;
+    margin-left: -150px;
+    width: 900px;
+} 
+form{
+    width: 100%;
+    padding: 28px;
+    border-radius: 12px;
+    background: #fff;
+    position: absolut;
+    transform: translateY(-50%) scale(.8);
+    opacity: 0;
+    z-index: 100;
+    transition: all .3s ease;
+    transition-delay: 0s;
+    
+} 
+
+form.active{
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 200;
+    transition-delay: .3s;
+}
 
 
-</style>
+
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.form-group{
+    margin-bottom: 14px;
+}
+.form-group label{
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.input-group{
+    width: 100%;
+    position: relative;
+}
+.input-group input{
+    padding: 12px 40px 12px 20px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid var(--dark-grey);
+    width: 100%;
+    transition: all .3s ease;
+}
+.input-group i{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: var(--text);
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.input-group input:focus,
+.input-group input:not(:placeholder-shown){
+    border-color: var(--text);
+    background: var(--grey);
+}
+
+.input-group input:focus + i,
+.input-group input:not(:placeholder-shown) + i {
+    color: var(--blue);
+}
+.input-group input:focus{
+    box-shadow: 0 0 0 4px var(--bs);
+}
+
+.btn-submit{
+    padding: 12px;
+    display: block;
+    width: 100%;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: none;
+    font-weight: 500px;
+    background: var(--blue);
+    
+}
+.btn-submit:hover{
+    background: var(--dark-blue);
+}
+
+p{
+    color: red;
+}
+#card{
+    margin-top: -100px;;
+}
 </style>
 </head>
 <body>
-
-
     <div class="grid-container">
-
-        <div id="map"></div>
-        <div>
-           <div class="card">
-            <p>Lorem ipsum dolor sit amet consectetur adip</p>
-
-           </div>
-
-
-
-
+     <div id="map"></div>
+     <div>
+        <div id="card">
+            <h3>5 Columbia Street
+                Middle River, MD 21220</h3>
+            <div class="card bg-dark mb-3" style="max-width: 30rem; height: 20rem; border-color: aliceblue;">
+                <div class="card-header" style="color: white;">Project information</div>
+                <div class="card-body;" style="color: white;">
+                  <p class="card-text;">
+                    <ul class="list;">
+                        <li><b>Category</b>:Auto mobile</li>
+                        <li><b>Company</b>:DODGE SRT</li>
+                        <li><b>Country</b>:America</li>
+                        <li><b>Name</b>:Challenger Hellcat</li>
+                    </ul>
+                  </p>
+            </div>
         </div>
-            
 
+
+
+      <div class="container">
+        <form onsubmit= "return myfunc()" action="#" class="login active" id="form">
+            <h2 class="title">Contact Us</h2>
+    
+            <div class="form-group">
+            <label for="Name">Name</label>
+             <div class="input-group">
+                 <input type="text" id="name" placeholder="Name">
+                 <i class='bx bxs-user' ></i>
+                 <p id="none"></p>
+                 </div>
+             </div>
+    
+             <div class="form-group">
+                <label for="Email">Email</label>
+                 <div class="input-group">
+                     <input type="text" id="email" placeholder="Email address">
+                     <i class='bx bx-envelope'></i>
+                     <p id="none1"></p>
+                     </div>
+                 </div>
+    
+                 <div class="form-group">
+                    <label for="Zipcode">Zipcode</label>
+                     <div class="input-group">
+                         <input type="text" id="Zipcode" placeholder="Zipcode">
+                         <i class='bx bx-package' ></i>
+                         <p id="none2"></p>
+                         </div>
+                     </div>
+    
+                     <div class="form-group">
+                        <label for="Phone number">Phone Number</label>
+                         <div class="input-group">
+                             <input type="number" id="Phone number" placeholder="Phone number">
+                             <i class='bx bxs-phone' ></i>
+                             <p id="none3"></p>
+                             </div>
+    
+                         </div>
+                         <button type="submit" class="btn-submit" onclick="myFunction()">submit</button>
+
+                         <button type="button" class="btn btn-success">
+                        <a class="nav-link" href="./Home.html" style="color: black; font-size: 20px;">Back to Home</a></button>
+
+        </form>
+
+    </div>
      </div>
-      
+
+
+     <script>
+      function myfunc(){
+  
+  
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var zipCode= document.getElementById("Zipcode").value;
+  var phoneNumber =document.getElementById("Phone number").value;
+  
+  
+  
+  
+  if (/^[a-zA-Z]{2,23}/.test(name)) {
+      document.getElementById("none").innerHTML = " "
+  } else {
+      document.getElementById("none").innerHTML = "charecter should be 2 to 23";
+    
+  }
+  
+  
+  if (/[a-z0-9A-Z]{1,20}@[a-z0-9A-Z]{1,10}\.[a-z]{2,}/gim.test(email)) {
+      document.getElementById("none1").innerHTML = " "
+  } else {
+      document.getElementById("none1").innerHTML = "invalid email";
+  
+  }
+  if (/^[10000-90000]/.test(zipCode)) {
+      document.getElementById("none2").innerHTML = " "
+  } else {
+      document.getElementById("none2").innerHTML = "invalid Zipcode";
+  
+  }
+  
+  if (/^\d{10}$/.test(phoneNumber)) {
+      document.getElementById("none3").innerHTML = " "
+  } else {
+      document.getElementById("none3").innerHTML = "phone number should be 10.";
+      return false;
+  }
+  
+  };
+//***************FORM SUBMITED ALERT MSG****************************************//
+function myFunction(){
+    window.alert('form not submited')
+
+};
 
 
 
 
-
-
-
-
-
-
+  </script>
+     
+<!------------------------------------------------------------------------------------->
 
     <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBTsw3a0xr_gDG89PMwd99dpxoE-y45A&callback=initMap"></script>
