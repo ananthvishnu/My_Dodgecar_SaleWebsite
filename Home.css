@@ -1,5 +1,6 @@
 /*google fonts*/  
-  @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bungee+Inline&family=Bungee+Shade&family=Lobster&family=Oleo+Script+Swash+Caps&family=Oswald:wght@700&family=Pirata+One&family=Poppins:wght@700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bungee+Inline&family=Bungee+Shade&family=Libre+Bodoni:wght@500&family=Lobster&family=Oleo+Script+Swash+Caps&family=Oswald:wght@700&family=Pirata+One&family=Poppins:wght@700&display=swap');
 
 
 /*universel zero setting*/
@@ -12,18 +13,68 @@ body{
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
-  
-  
-  
-}
-.grid1{
-    background-color: gray;
-    font-family:Bowlby One SC;
 }
 
 #navbarNavDropdown{
   margin-left: 1300px;
 }
+
+/***FIRST GRID BOX************/
+.grid1{
+    background-color: gray;
+    border: 10px solid;
+    font-family:Libre Bodoni;
+    
+}
+#head{
+  font-size:60px; 
+}
+#para{
+  font-size:40px;
+}
+#car{
+  height: 500px;
+  width: 700px;
+  border-radius: 20px;
+}
+#button{
+  height: 70px;
+  width: 120px;
+  margin-left: 30%;
+  border-radius: 40px;
+  border-color: black;
+  color: white;
+  border-width: 5px;
+}
+/*****FIRST GRID FINISH*********/
+/*****SECOND GRID START*********/
+#grid2{
+  background-color:grey;
+  margin-top: 200px;
+  height: 460px;
+  border: 10px solid;
+  border-radius: 20px;
+  box-shadow: 40px 40px 60px black;
+}
+
+#engine{
+  height: 400px;
+  width:400px ;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+#head2{
+  font-size: 40px;
+  margin-left: -400px;
+}
+#para2{
+  margin-left: -400px ;
+  }
+#grid3{
+    margin-left: 30px;
+    margin-top:-200px;
+}
+
 
 /*button glowing effect*/
 button{
@@ -47,60 +98,101 @@ button:hover {
   font-size: 19px;
 }
 
-/*888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+/****FIRST CHECKOUT OUR CARS CSS********/
+.portpolio1{
+  padding-top: 30px;
+  margin-left: 820px;
+}
+.portpolio1 p {
+  color: gray;
+  font-style:italic;
+}
 
+/***********************************************/
+/********IMAGE FILTER START AND BIG BOX CSS****/
 .gallery{
   padding: 2em;
   width: 100vw;
   height: 1500px;
-  border: 10px solid;
+  border: 10px solid black;
+  border-radius: 30px;
+  background-image: url(./11111.jpg);
+  background-size:cover;
+  background-position:center;
+  box-shadow: 30px 30px 60px black inset ;
 
 }
+
+/*******IMAGE FILTER BUTTONS BACKGROUND DIV**/
 .buttons{
   padding: 2em 0 6em 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border: 10px solid black;
+  border-radius: 30px;
+  background: url(./11111.jpg);
+  background-size:cover;
+  background-position:center;
+  /* box-shadow: 30px 30px 60px black inset ; */
 
 }
+
+/*****IMAGE FILTER BUTTON'S CSS*****/
 .buttons button{
   margin: 1em;
-  padding: 0.7em 1.5em;
-  font-size: 1.1em;
+  padding: 0.5em 0.5em;
+  font-size: 20px;
   border: none;
   background: #111;
   color: #fff;
-  border: 2px solid #111;
-  border-radius: 0.2em;
+  border: 5px solid black;
+  border-radius: 40px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 80px;
+  box-shadow: 20px 20px 20px black ;
 
 } 
 
+/****BUTTON HOVER CSS*********/
 .buttons button:hover,
 .buttons .btn-clicked{
-  background: #fff;
+  background: gold;
   color: #111;
 
 }
+
+/********IMAGES SHOWING GRID**********/
 .images{
-  
-  max-width: 1360px;
+  max-width: 1970px;
   margin: 0em auto; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 1em;
+  border: 10px solid;
+  border-radius: 30px;
+  background:gray;
+  box-shadow: 10px 10px 300px darkslategray inset;
 
 }
+
+/*********EVERY IMAGES'S CSS*********/
 .images img {
   width: 25em;
   margin: 1em;
-  border-radius: 0.2em;
+  border-radius: 4em;
   transition: 0.6s;
+  padding-left: 20px;
+  height: 230px;
+  box-shadow: 30px 30px 30px black ;
+
 }
+
+
 /*Classes for Javascript*/
 .images .img-expand{
   width: 25em;
@@ -144,60 +236,12 @@ button:hover {
       width: 100%;
   }
 }
-
-
+/****************IMAGE FILTER END********************/
+/****************************************************/
 
 /*888888888888888888888888 HOME PAGE UP SIDE CSS 888888888888888888888888888888888888888888888888*/
 
-#head{
-    font-size:60px; 
-}
-#para{
-    font-size:40px;
-}
-#car{
-    height: 500px;
-    width: 700px;
-    border-radius: 20px;
 
-}
-#button{
-    height: 70px;
-    width: 120px;
-    margin-left: 30%;
-    border-radius: 40px;
-    border-color: black;
-    color: white;
-    border-width: 5px;
-}
-#grid2{
-    background-color:grey;
-    margin-top: 200px;
-    height: 460px;
-    border: 10px solid;
-    border-radius: 20px;
-  
-}
-
-#engine{
-    height: 400px;
-    width:400px ;
-    margin-top: 20px;
-    margin-right: 100px;
-}
-
-#head2{
-    font-size: 40px;
-    margin-left: -400px;
-}
-#para2{
-
-    margin-left: -400px ;
-}
-#grid3{
-    margin-left: 30px;
-    margin-top:-200px;
-}
 /*section2 finish*/
 .portpolio{
     padding-top: 30px;
@@ -211,8 +255,8 @@ button:hover {
 
   
 .po{
-    background-color:white;
-
+  background-color:white;
+  border: 10px solid;
 }
 
 .p{
@@ -264,7 +308,7 @@ button:hover {
   height: 600px;
   width: 1900px;
 }
-  .grid1{
-    border: 10px solid;
-  }
+  
+
+
   
